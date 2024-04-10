@@ -13,5 +13,5 @@ To access a module, click on its corresponding link.
 | Back-end Development | [Link](./back-end-development) |
 | Databases | [Link](./databases) |
 | Security | [Link](./security) |
-| API Testing | [Link](./api-testing) |
+| API Testing | [Link](./back-end-testing) |
 | End to End project | [Link](./end-to-end) |
