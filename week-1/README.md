@@ -8,7 +8,7 @@ Each separate module is stored in a different folder.
 
 To access a module, click on its corresponding link. 
 
-| Resource | Folder |
+| Module | Folder |
 | --- | --- |
 | UX Design | [Link](./ux-design) |
 | Agile | [Link](./agile) |
