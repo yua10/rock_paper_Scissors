@@ -10,4 +10,8 @@ To access a resource, choose the relevant folder and read [`instructions.md`](./
 
 | Resource | Folder |
 | --- | --- |
-| Complete | `complete` |
+| Backend exercises | [Link](./backend-exercises) |
+| Basic Express server | [Link](./basic-express-server-complete) |
+| MVC Backend - complete | [Link](./mc-backend-complete) |
+| MVC Backend with REST - complete | [Link](./mc-backend-restful-complete) |
+| MVC Backend - Deployed version | [Link](./mc-backend-deployed) |
