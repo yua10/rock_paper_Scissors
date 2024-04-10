@@ -10,5 +10,5 @@ To access a module, click on its corresponding link.
 
 | Resource | Folder |
 | --- | --- |
-| Taster Day - BA/PM | [Link](./back-end-development) |
-| Taster Day - Software Engineering | [Link](./databases) |
+| Taster Day - BA/PM | [Link](./taster-BA-PM) |
+| Taster Day - Software Engineering | [Link](./taster-SE) |
