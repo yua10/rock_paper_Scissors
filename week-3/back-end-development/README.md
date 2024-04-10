@@ -6,7 +6,7 @@ This folder contains resources (including exemplars, instructions, and starter c
 
 Each separate resource is stored in a different folder.
 
-To access a resource, choose the relevant folder and read [`instructions.md`](./instructions.md) for details.
+To access a resource, click on its corresponding link. 
 
 | Resource | Folder |
 | --- | --- |
