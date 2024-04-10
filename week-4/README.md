@@ -8,7 +8,7 @@ Each separate module is stored in a different folder.
 
 To access a module, click on its corresponding link. 
 
-| Resource | Folder |
+| Module | Folder |
 | --- | --- |
 | Taster Day - Cloud & DevOps | [Link](./taster-cloud-devops) |
 | Taster Day - Data | [Link](./taster-data) |
