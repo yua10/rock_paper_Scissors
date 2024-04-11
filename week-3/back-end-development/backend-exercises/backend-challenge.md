@@ -6,7 +6,7 @@ Practice of your knowledge of MVC by finishing the MVC app built in the previous
 
 ### Duration
 
-30mins
+You have **30 minutes** to make as much progress on this task as possible.
 
 ### Team
 

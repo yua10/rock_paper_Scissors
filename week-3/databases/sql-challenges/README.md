@@ -6,7 +6,7 @@ Practice of your knowledge of SQL through SQL challenges.
 
 ### Duration
 
-30mins
+You have **30 minutes** to make as much progress on this task as possible.
 
 ### Team
 

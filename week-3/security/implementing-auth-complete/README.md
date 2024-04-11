@@ -10,9 +10,3 @@ DB_URL=[valid PostgreSQL connection string]
 BCRYPT_SALT_ROUNDS=10
 SECRET_TOKEN=<secret token>
 ```
-
----
-
-[Back](./README.md)
-
----

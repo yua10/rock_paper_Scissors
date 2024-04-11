@@ -6,7 +6,7 @@ Practice of fetch requests on a frontend application
 
 ### Duration
 
-1 hour 30 minutes - take a break
+You have **1 hour 30 minutes** to make as much progress on this task as possible.
 
 ### Team
 

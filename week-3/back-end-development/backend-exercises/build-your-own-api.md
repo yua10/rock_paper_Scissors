@@ -6,7 +6,7 @@ Practice of your knowledge of REST and MVC by building your own API
 
 ### Duration
 
-1 hour
+You have **1 hour** to make as much progress on this task as possible.
 
 ### Team
 
