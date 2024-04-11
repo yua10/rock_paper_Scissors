@@ -12,5 +12,5 @@ To access a resource, click on its corresponding link.
 | --- | --- |
 | Implementing Auth - starter | [Link](./implementing-auth-starter) |
 | Implementing Auth - complete | [Link](./implementing-auth-complete) |
-| Security exercises | [Link](./security-exercise) |
+| Security exercise | [Link](./security-exercise) |
 
