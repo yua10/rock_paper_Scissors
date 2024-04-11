@@ -12,5 +12,5 @@ To access a resource, click on its corresponding link.
 | --- | --- |
 | API Testing - starter | [Link](./api-testing-starter/) |
 | API Testing - complete  | [Link](./api-testing-complete/) |
-| API Unit testing - exercise | [Link](./api-unit-testing-exercise/) |
+| API unit testing - exercise | [Link](./api-unit-testing-exercise/) |
 | API Testing - practice | [Link](./api-testing-practice) |
