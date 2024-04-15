@@ -12,3 +12,4 @@ To access a resource, click on its corresponding link.
 | --- | --- |
 | Connecting frontend to backend | [Link](./connecting-frontend) |
 | Frontend using `await` - complete| [Link](./frontend-complete-await) |
+| Fruit salad app - exercise| [Link](./fruit-salad-exercise) |
