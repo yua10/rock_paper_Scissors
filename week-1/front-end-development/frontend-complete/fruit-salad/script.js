@@ -1,14 +1,12 @@
 const fruitForm = document.querySelector("#inputSection form");
 const fruitList = document.querySelector("#fruitSection ul");
 const fruitNutrition = document.querySelector("#nutritionSection p");
-const createForm = document.querySelector("#create-form");
 
 let cal = 0;
 const fruitCal = {};
 const apiKey = "API KEY HERE";
 
 fruitForm.addEventListener("submit", extractFruit);
-createForm.addEventListener("submit", createNewFruit);
 
 function extractFruit(e) {
     e.preventDefault();
@@ -36,39 +34,6 @@ async function fetchFruitData(fruit) {
     }
 }
 
-async function createNewFruit(e) {
-    e.preventDefault();
-
-    const data = {name: e.target.fruitInput.value};
-
-    const options = {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-    }
-
-    //Make sure to add your deployed API URL in this fetch
-    const response = await fetch(`https://<DEPLOYED BACKEND URL>/fruits`, options);
-    
-    let messageStatus = document.querySelector("#message")
-
-    if(response.status === 201) {
-        e.target.fruitInput.value = ''
-        messageStatus.textContent = "Fruit successfully created."
-        setTimeout(() => {
-          messageStatus.textContent = ""
-        }, 4000)
-    } else {
-        e.target.fruitInput.value = ''
-        messageStatus.textContent = "This fruit already exists. Please enter another fruit!"
-        setTimeout(() => {
-          messageStatus.textContent = ""
-        }, 4000)
-    }
-}
-
 function addFruit(fruit, fruitImg) {
     const img = document.createElement("img");
     img.classList.add('fruits');
@@ -92,4 +57,3 @@ function removeFruit(e) {
     delete fruitCal[fruitName];
     e.target.remove();
 }
-
