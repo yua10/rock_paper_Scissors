@@ -22,4 +22,4 @@ Work on the following tasks for the rest of the day:
 
 ## Output
 
-Push your changes to your Github frontend repo 
+Push your changes to your Github frontend repo & test the new deployed version
