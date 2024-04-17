@@ -19,7 +19,7 @@ function extractFruit(e) {
 async function fetchFruitData(fruit) {
     try {
         //Make sure to replace this link with your deployed API URL in this fetch
-        const respData = await fetch(`https://fruity-api.onrender.com/fruits/${fruit}`);
+        const respData = await fetch(`https://fruit-api-5v0j.onrender.com/fruits/${fruit}`);
         const respImg = await fetch(
             `https://pixabay.com/api/?q=${fruit}+fruit&key=${apiKey}`
         );
@@ -50,7 +50,7 @@ async function createNewFruit(e) {
     }
 
     //Make sure to add your deployed API URL in this fetch
-    const response = await fetch(`https://<DEPLOYED BACKEND URL>/fruits`, options);
+    const response = await fetch(`https://fruit-api-5v0j.onrender.com/fruits`, options);
     
     let messageStatus = document.querySelector("#message")
 
