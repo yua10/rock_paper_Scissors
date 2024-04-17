@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+    background-image: url(https://images.unsplash.com/photo-1573883844855-f364441ac463?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    color: black;
+}
+  
+/* Add a black background color to the top navigation */
+nav {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 5px solid brown;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: burlywood;
+}
+
+/* Style the links inside the navigation bar */
+
+nav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+    background-color: brown;
+    color: white;
+}
+  
+/* Add a color to the active/current link */
+nav a.active {
+    background-color: brown;
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: "Impact", serif;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+  
+h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+  
+  
+#menu {
+    top: 80px;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   background-color: burlywood;
+   width: 80%;
+   max-width: 500px;
+   margin: auto;
+   padding: 30px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+
+.item p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.menu-icon {
+    height: 45px;
+}
+
+footer {
+    border-top: 5px solid brown;
+    background-color: burlywood;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+footer a, p {
+  font-size: 14px;
+  color: black;
+}
+
+hr {
+    height: 3px;
+    width: 100%;
+    background-color: brown;
+    border: 0;
+}
