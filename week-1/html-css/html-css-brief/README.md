@@ -1,23 +1,20 @@
 # From Wireframes to Webpages
 
-Students turn their hi-fi wireframes into a webpage (desktop version)
+Use your knowledge of HTML/CSS to turn your hi-fi wireframes into a webpage (desktop version)
 
 ## Organisation
 
 ### Duration
 
-3 hours with some breaks in between - the breaks can be chosen by students whenever they feel the need 
+You have **3 hours** to make as much progress on this task as possible.
 
 ### Team
 
-Same pairs as earlier in the day.
+Same pairs as yesterday.
 
-## Learning objectives
-
-- **Create** a user interface that prioritizes accessibility and responsiveness according to provided specifications.
-- **Modify** a design to suit alternative mediums while maintaining its integrity and usability.
-  
 ## Brief
+
+Work on the following tasks:
 
 - Turn your high fi wireframes into a webpage (desktop version)
 - Build your 2 chosen screens per pair - you can either work as a pair on the two screens or choose to divide the load and build a screen each
@@ -27,4 +24,5 @@ Same pairs as earlier in the day.
 
 ## Output
 
-Each pair should enhance their two screens using Bootstrap.
+Build two screens for the chosen app.
+
