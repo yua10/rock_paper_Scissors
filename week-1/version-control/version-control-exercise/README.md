@@ -16,7 +16,7 @@ Pairs of students
 
 **Please note that this is a continuation of the end to end project you've been working on for the past two days.**
 
-Practice the steps within the [Git flow document]() with your partner: 
+Practice the steps within the [Git flow document](../git_flow.md) with your partner: 
 
 
 
