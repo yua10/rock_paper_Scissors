@@ -18,7 +18,7 @@ Pairs of students
 
 The objective of the exercise is to transfer a basic website project (your end to end project) from local machines to GitHub and collaborate using version control with Git. The [Git flow document](../git_flow.md) can be used to help with the exercise. 
 
-Instructions:
+### Instructions:
 
 **Create GitHub Repository:**
 - One member of each pair should create a new repository on GitHub to host the website project.
