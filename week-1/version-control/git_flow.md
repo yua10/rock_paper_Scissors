@@ -1,6 +1,6 @@
-# Git Flow 🏆
+# Git/Github Flow 🏆
 
-This is the Git flow you will need to follow in your Project weeks. 
+This is the Git/Github flow you will need to follow in your Project weeks: 
 
 1. Choose a person from your group who will be in charge of **Steps 2-13**
 2. This one person creates a folder on their local machine
