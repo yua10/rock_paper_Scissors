@@ -1,6 +1,6 @@
-# Version control - exercise 
+# Practicing Git
 
-Use your knowledge of version control (git + Github) to collaborate on a project effectively 
+Use your knowledge of version control (Git + Github) to collaborate on a project effectively 
 
 ## Organisation
 
@@ -54,6 +54,17 @@ The objective of the exercise is to transfer a basic website project (your end t
 - Once the collaborative work is complete, reflect on the experience of using Git and GitHub for version control.
 - Discuss the benefits and challenges encountered during the collaboration process.
 
+### Extension
+
+You can complete the following tasks, in order (if you have finished with the task above):
+
+- Add themselves to the [Hello Github repository](https://github.com/getfutureproof/fp_study_notes_hello_github) (TODO: change repo to LaFosse version when it's created)
+- Create a **cheatsheet** for their own reference, containing the major Git commands and what they do.
+- Use [Learn Git branching](https://learngitbranching.js.org/) to practice controlling multiple branches
+- Play the following Git games:
+  - [Git gud (game)](https://github.com/benthayer/git-gud)
+  - [Gistery (game)](https://github.com/nivbend/gitstery)
+    
 ## Output
 
 Share the Github repository containing your end to end project code with your trainer
