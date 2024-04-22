@@ -23,7 +23,7 @@ The objective of the exercise is to transfer a basic website project (your end t
 **Create GitHub Repository:**
 - One member of each pair should create a new repository on GitHub to host the website project.
 - Choose a descriptive name for the repository and add a brief description if necessary.
-- Make sure to select the option to initialize the repository with a README file.
+- Make sure to select the option to initialise the repository with a `README` file.
 
 **Transfer Website Project:**
 - The same member of the pair (let's call you partner A) should navigate to the directory containing their website project on their local machines.
@@ -34,7 +34,7 @@ The objective of the exercise is to transfer a basic website project (your end t
 - Push the local repository to GitHub using the command `git push -u origin main`.
 
 **Collaboration:**
-- The same member of the pair should make their partner collaborators of the Github repo (use this [link](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) for help)
+- Partner A should make their partner a collaborator of the Github repo (use this [link](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) for help)
 - The other member of the pair (let's call you partner B) should now be able to clone the Github repository to their local machine using the command `git clone <repository_url>`.
 - Partner B can now create their own individual branch off the `main` using `git checkout -b <branch-name>` or `git switch <branch-name>`
 - Partner B can add their changes to the website project as needed, committing changes locally using `git add` and `git commit`.
