@@ -1,19 +1,35 @@
-# Programming fundamentals
+# Passing tests
 
-This repository contains instructions and (where applicable) start code for exercises in the **Programming fundamentals** module.
+## Organisation
 
-## Set-up
+### Duration
 
-Begin by **forking** this repository and **cloning** it onto your machine.
+You will have **1 hour and 30 minutes** to complete this task.
 
-## Exercises
+### Team
 
-To begin an exercise, switch to the relevant branch and read [`exercise.md`](./exercise.md) for instructions.
+For this task, work with another member of your cohort.
 
-| Exercise | Branch |
-| --- | --- |
-| Pseudocode | `pseudocode` |
-| Scripts & libraries | `scripts-and-libraries` |
-| Passing tests | `passing-tests` |
-| Loops and Conditionals | `loops-and-conditionals` |
-| Making a game | `making-a-game` |
+### Set-up
+
+Run `npm install` from this folder to install all necessary libraries.
+
+## Brief
+
+This branch of the repository contains a `package.json` set-up to run unit tests on code files. At the moment, the tests are all failing as the code files - and the functions that should be in them - do not exist.
+
+Make the tests pass.
+
+## Guidance
+
+- You will need to both create files and write code to complete this task
+- Do not edit the test files or the `package.json`
+- There are NPM scripts that will run the tests (wholly or partially)
+- Start by working on the tests in `numberFunctions.js`; the ones in `stringFunctions.js` are harder
+- Reading the test code might be helpful, but it's not required - the console output from the tests should be able to guide you
+- You may need to do some research to get the string tests to pass
+
+## Resources
+
+- [Throwing errors - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
+- [Jest documentation](https://jestjs.io/)
