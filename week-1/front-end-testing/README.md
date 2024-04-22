@@ -13,3 +13,4 @@ To access a resource, click on its corresponding link.
 | Passing tests | [Link](./passing-tests/) |
 | Frontend testing - starter | [Link](./frontend-testing-starter/) |
 | Frontend testing - completed | [Link](./frontend-testing-complete/) |
+| DOM Testing Challenge | [Link](./dom-testing-challenge/) |
