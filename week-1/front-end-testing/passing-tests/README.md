@@ -1,28 +1,34 @@
 # Passing tests
 
+Practice of your testing knowlege and JavaScript coding skills by analysing an existing test suite & writing functions to ensure the successful passage of all tests. 
+
 ## Organisation
 
 ### Duration
 
-You will have **1 hour and 30 minutes** to complete this task.
+You have **2 hours** to make as much progress on this task as possible.
 
 ### Team
 
-For this task, work with another member of your cohort.
+Pairs of students
 
 ### Set-up
 
-Run `npm install` from this folder to install all necessary libraries.
+**Run** `npm install` from this folder to install all necessary libraries.
 
 ## Brief
 
-This branch of the repository contains a `package.json` set-up to run unit tests on code files. At the moment, the tests are all failing as the code files - and the functions that should be in them - do not exist.
+This folder contains a `package.json` set-up to run unit tests on code files. At the moment, the tests are all failing as the code files - and the functions that should be in them - do not exist.
 
-Make the tests pass.
+Your task is to make the tests pass by implementing the necessary functions in the following files:
+- `numberFunctions.js`
+- `stringFunctions.js`
+
+This will involve navigating an unfamiliar project, research, and using existing knowledge of Javascript syntax.
 
 ## Guidance
 
-- You will need to both create files and write code to complete this task
+- You will need to write code within existing files to complete this task
 - Do not edit the test files or the `package.json`
 - There are NPM scripts that will run the tests (wholly or partially)
 - Start by working on the tests in `numberFunctions.js`; the ones in `stringFunctions.js` are harder
