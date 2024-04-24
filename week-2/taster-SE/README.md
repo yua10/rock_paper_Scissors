@@ -10,5 +10,6 @@ To access a resource, click on its corresponding link.
 
 | Resource | Folder |
 | --- | --- |
+| Making a game using OOP | [Link](./making-a-game.md/) |
 | Technical questions | [Link](./technical-questions.md/) |
 | JavaScript challenges | [Link](./javascript-challenges.md/) |
