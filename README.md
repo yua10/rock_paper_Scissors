@@ -8,3 +8,8 @@ All modules can be found unde its corresponding week - please refer to schedule 
 
 | Resource | Folder |
 | --- | --- |
+| Week 1 modules | [Link](./week-1) |
+| Week 2 modules | [Link](./week-2) |
+| Week 3 modules | [Link](./week-3) |
+| Week 4 modules | [Link](./week-4) |
+| Project | [Link](./project) |
