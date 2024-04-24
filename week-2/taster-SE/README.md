@@ -13,3 +13,4 @@ To access a resource, click on its corresponding link.
 | Making a game using OOP | [Link](./making-a-game.md/) |
 | Technical questions | [Link](./technical-questions.md/) |
 | JavaScript challenges | [Link](./javascript-challenges.md/) |
+| Feedback guide | [Link](./feedback-guide.md/) |
