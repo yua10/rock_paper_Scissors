@@ -11,3 +11,4 @@ To access a resource, click on its corresponding link.
 | Resource | Folder |
 | --- | --- |
 | Technical questions | [Link](./technical-questions.md/) |
+| JavaScript challenges | [Link](./javascript-challenges.md/) |
