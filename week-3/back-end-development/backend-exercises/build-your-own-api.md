@@ -28,4 +28,4 @@ You can make it about any subject you like (sports teams, songs, animals, videog
 
 ## Output
 
-Create a new repository for your app and send your repo link to the Slack channel
+Create a new repository for your app and send your repo link to your cohort group

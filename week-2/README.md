@@ -12,3 +12,4 @@ To access a module, click on its corresponding link.
 | --- | --- |
 | Taster Day - BA/PM | [Link](./taster-BA-PM) |
 | Taster Day - Software Engineering | [Link](./taster-SE) |
+| Hackathon | [Link](./hackathon/) |
