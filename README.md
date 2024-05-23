@@ -4,7 +4,7 @@ This student-facing repository contains resources (including exemplars, instruct
 
 ## Resources
 
-All modules can be found unde its corresponding week - please refer to schedule below to find what you need: 
+All modules can be found under its corresponding week - please refer to schedule below to find what you need: 
 
 | Resource | Folder |
 | --- | --- |
