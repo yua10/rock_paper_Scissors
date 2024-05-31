@@ -58,7 +58,6 @@ The objective of the exercise is to transfer a basic website project (your end t
 
 You can complete the following tasks, in order (if you have finished with the task above):
 
-- Add themselves to the [Hello Github repository](https://github.com/getfutureproof/fp_study_notes_hello_github) (TODO: change repo to LaFosse version when it's created)
 - Create a **cheatsheet** for their own reference, containing the major Git commands and what they do.
 - Use [Learn Git branching](https://learngitbranching.js.org/) to practice controlling multiple branches
 - Play the following Git games:
@@ -67,4 +66,14 @@ You can complete the following tasks, in order (if you have finished with the ta
     
 ## Output
 
-Share the Github repository containing your end to end project code with your trainer
+- Share the Github repository containing your end to end project code with your trainer
+- A cheatsheet (does not need to be shared)
+
+## Resources
+
+- [Learn Git branching (game)](https://learngitbranching.js.org/)
+- [Git explorer](https://gitexplorer.com/)
+- [Git gud (game)](https://github.com/benthayer/git-gud)
+- [Gistery (game)](https://github.com/nivbend/gitstery)
+- [Oh Shit, Git?!](https://ohshitgit.com/)
+- [Basic Git commands](https://www.freecodecamp.org/news/how-to-use-basic-git-and-github-commands/)
