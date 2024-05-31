@@ -6,7 +6,7 @@ Use your knowledge of HTML/CSS to turn your hi-fi wireframes into a webpage (des
 
 ### Duration
 
-You have **3 hours** to make as much progress on this task as possible.
+You have **2 hours 30 minutes** to make as much progress on this task as possible.
 
 ### Team
 
