@@ -6,11 +6,11 @@ Use your knowledge of Bootstrap to enhance the design and layout of your webpage
 
 ### Duration
 
-You have **1 hour 30 minutes** to make as much progress on this task as possible.
+You have **2 hours 30 minutes** to make as much progress on this task as possible.
 
 ### Team
 
-Same pairs as earlier in the day.
+Same pairs as yesterday.
 
 ## Brief
 
