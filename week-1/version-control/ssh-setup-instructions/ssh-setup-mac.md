@@ -4,6 +4,8 @@ These instructions are taken from the following [Github docs](https://docs.githu
 
 ### 1. Generate an SSH Key Pair
 
+- Open your Terminal
+
 - Generating an SSH key pair involves creating two files: a **private key (id_rsa)** and a **public key (id_rsa.pub)**. 
 
 - Paste the text below, replacing the email used in the example with your GitHub email address:
@@ -32,7 +34,6 @@ These instructions are taken from the following [Github docs](https://docs.githu
 
   ```sh
   eval "$(ssh-agent -s)"
-  ssh-add ~/.ssh/id_rsa
   ```
 
 - This command starts the SSH agent in the background.
@@ -101,7 +102,7 @@ These instructions are taken from the following [Github docs](https://docs.githu
 
 - Paste the public key into the provided field and save.
 
-### 4. Test the Connection
+### 5. Test the Connection
 
 - Test the SSH connection to GitHub, using the following command:
 
@@ -111,7 +112,7 @@ These instructions are taken from the following [Github docs](https://docs.githu
 
 - A successful connection will result in a welcome message from GitHub.
 
-### 5. Using SSH with GitHub Repositories
+### 6. Using SSH with GitHub Repositories
 
 - You can clone a repository using SSH, with the following command:
 
