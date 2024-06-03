@@ -1,4 +1,4 @@
-# Command Line interfaces  Programming fundamentals
+# Command Line interfaces & Programming fundamentals
 
 This folder contains resources (including exemplars, instructions, and starter code) for the **Command Line interfaces & Programming fundamentals** modules.
 
@@ -10,5 +10,5 @@ To access a resource, click on its corresponding link.
 
 | Resource | Folder |
 | --- | --- |
-| CLI Cheatsheet | [Link](./cli-cheatsheet) |
+| CLI Cheatsheet | [Link](./cli-cheatsheet.md) |
 | JavaScript challenges | [Link](./javascript-challenges.md) |
