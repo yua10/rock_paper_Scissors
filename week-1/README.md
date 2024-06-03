@@ -14,6 +14,7 @@ To access a module, click on its corresponding link.
 | Agile | [Link](./agile) |
 | HTML & CSS | [Link](./html-css) |
 | Bootstrap | [Link](./bootstrap) |
+| CLI & Programming fundamentals | [Link](./cli-and-programming-fundamentals) |
 | Version Control | [Link](./version-control) |
 | Front-end Development | [Link](./front-end-development) |
 | Front-end Testing | [Link](./front-end-testing) |
