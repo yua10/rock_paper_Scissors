@@ -16,7 +16,7 @@ Pairs of students
 
 **Please note that this is a continuation of the end to end project you've been working on for the past two days.**
 
-The objective of the exercise is to transfer a basic website project (your end to end project) from local machines to GitHub and collaborate using version control with Git. The [Git flow document](../git_flow.md) can be used to help with the exercise. 
+The objective of the exercise is to transfer a basic website project (your end to end project) from local machines to GitHub and collaborate using version control with Git. The [Git flow document](../git-notes/git-flow.md) can be used to help with the exercise. 
 
 ### Instructions:
 
