@@ -11,4 +11,5 @@ To access a resource, click on its corresponding link.
 | Resource | Folder |
 | --- | --- |
 | Practicing Git | [Link](./version-control-exercise) |
-| Git/Github flow | [Link](./git_flow.md) |
+| SSH setup instructions | [Link](./ssh-setup-instructions) |
+| Git/Github notes | [Link](./git-notes) |
