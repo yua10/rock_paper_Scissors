@@ -10,3 +10,4 @@ To access a resource, click on its corresponding link.
 
 | Resource | Folder |
 | --- | --- |
+| Agile Project | [Link](./agile-project) |

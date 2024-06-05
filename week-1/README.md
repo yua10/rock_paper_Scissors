@@ -10,8 +10,6 @@ To access a module, click on its corresponding link.
 
 | Module | Folder |
 | --- | --- |
-| UX Design | [Link](./ux-design) |
-| Agile | [Link](./agile) |
 | HTML & CSS | [Link](./html-css) |
 | Bootstrap | [Link](./bootstrap) |
 | CLI & Programming fundamentals | [Link](./cli-and-programming-fundamentals) |
