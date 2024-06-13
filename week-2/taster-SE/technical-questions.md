@@ -47,7 +47,7 @@
 - What is NPM, and how is it used in JavaScript development?
 - Explain the concept of dependencies in a JavaScript project and how they are managed
 - How can you retrieve data from an API asynchronously using JavaScript?
-- Describe** the difference between synchronous and asynchronous programming.
+- Describe the difference between synchronous and asynchronous programming.
 - What are JavaScript promises, and how do they help in asynchronous programming?
 - Describe the concept of the event loop
   
