@@ -12,4 +12,4 @@ All modules can be found under its corresponding week - please refer to schedule
 | Week 2 modules | [Link](./week-2) |
 | Week 3 modules | [Link](./week-3) |
 | Week 4 modules | [Link](./week-4) |
-| Project | [Link](./project) |
+| Week 5 project | [Link](./week-5) |
