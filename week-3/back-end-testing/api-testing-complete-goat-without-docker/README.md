@@ -1,10 +1,10 @@
-# API Testing - another example without Docker (completed)
+# API Testing using Docker (completed)
 
 ## Usage
 
 - Run `git clone <repo-link>`
 - Run `cd server`
-- Run `npm install`
+- Run `npm install
 
 ### Setup the database
 
@@ -12,20 +12,25 @@
   
     ```sh
     PORT=<pick a port>
-    ## use Supabase for both DB_URL & DB_TEST_URL
+    ## use Supabase for DB_URL
     DB_URL=<link-db>
-    DB_TEST_URL=<link-test-db>
     ```
-
-- Run `npm run seed-db` to setup the dev database
+    
+- Run `npm run seed-db` to setup the datasbase
 
 ### Run the server
 
 - Run `npm run dev` to start the API & the app should run on `3000` (if that's the port you've set in the `.env` file)
 
-### Setup testing database
+### Setup testing environment
 
-- Run `npm run setup-test-db` within `server` to setup the test database
+- Make sure to have Docker Desktop open
+- Run `docker compose up -d` (outside of the `server` folder) to set up the testing database
+- Add the following to the `.env` file
+
+  ```sh
+  DB_TEST_URL=postgres://testing:jkljkl@localhost:5433/testing
+  ```
 
 ### Run the tests & display test coverage
 
