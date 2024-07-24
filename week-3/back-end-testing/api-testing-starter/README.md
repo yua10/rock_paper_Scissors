@@ -12,7 +12,7 @@
   
     ```bash
     PORT=<pick a port>
-    ## use elephant SQL for DB_URL
+    ## use Supabase for DB_URL
     DB_URL=<link-db>
     ```
 - Run `npm run seed-db` to setup the database
