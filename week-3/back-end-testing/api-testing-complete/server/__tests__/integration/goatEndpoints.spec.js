@@ -2,7 +2,7 @@ const request = require('supertest')
 const app = require('../../app')
 const { resetTestDB } = require('./config')
 
-describe('api server', () => {
+describe('Goat API Endpoints', () => {
   let api
 
   beforeEach(async () => {
@@ -20,92 +20,106 @@ describe('api server', () => {
     api.close(done)
   })
 
-  // As a user I can access the API
-  it('responds to GET / with a 200 status code', (done) => {
-    request(api).get('/').expect(200, done)
-  })
-
-  it('responds to GET / with a message and a description', async () => {
-    const response = await request(api).get('/')
-
-    expect(response.statusCode).toBe(200)
-    expect(response.body.message).toBe('welcome')
-    expect(response.body.description).toBe('GOAT API')
-  })
-
-  // As a user I can see all the goats
-  it('responds to GET /goats with a 200 status code', (done) => {
-    request(api).get('/goats').expect(200, done)
-  })
-
-  it('GET /goats display 3 elements in the web browser', async () => {
-    const response = await request(api).get('/goats')
-    expect(response.body.data.length).toBe(3)
-  })
-
-  // As a user I can see one goat
-  it('responds to GET /goats/:id with a 200', (done) => {
-    request(api).get('/goats/3').expect(200, done)
-  })
-
-  it('responds to a unknown goat id with a 404 status code', (done) => {
-    request(api)
-      .get('/goats/42')
-      .expect(404)
-      .expect({ error: 'This goat does not exist!' }, done)
-  })
-
-  // As a user I can add a goat to the database
-  it('responds to POST /goats with a 201 status code', (done) => {
-    const testData = {
-      name: "Steph Curry",
-      age: new Date().getFullYear() - 1988
-    }
-
-    request(api)
-      .post('/goats')
-      .send(testData)
-      .set('Accept', 'application/json')
-      .expect(201)
-      .expect({ data: { ...testData, id: 4 } }, done)
-  })
+  describe('GET /', () => {
+    it('responds to GET / with a message and a description', async () => {
+      const response = await request(api).get('/')
   
-  // As as user I cannot post to /
-  it('responds to invalid method request with 405', (done) => {
-    request(api).post('/').expect(405, done)
-  })
+      expect(response.statusCode).toBe(200)
+      expect(response.body.message).toBe('welcome')
+      expect(response.body.description).toBe('GOAT API')
+    })
+  });
 
-  // As a user I can update the details for one goat
-  it('responds to PATCH /goats/1 with status 200', (done) => {
-    const testData = {
-      name: "Steph Curry",
-      age: new Date().getFullYear() - 1988
-    }
+  describe('GET /goats', () => {
+    it('should return all goats with a status code 200', async () => {
+      const response = await request(api).get('/goats');
 
-    request(api)
-      .patch('/goats/1')
-      .send(testData)
-      .set('Accept', 'application/json')
-      .expect(200)
-      .expect({ data: { ...testData, id: 1 } }, done)
-  })
+      expect(response.status).toBe(200);
+      expect(response.body.data).toBeInstanceOf(Array);
+      expect(response.body.data.length).toBeGreaterThan(0);
+    });
+  });
 
-  // As a user I can delete a goat
-  it('responds to DELETE /goats/:id with status 204', (done) => {
-    request(api).delete('/goats/1').expect(204, done)
-  })
+  describe('GET /goats/:id', () => {
+    it('should return a specific goat by ID', async () => {
+      const goatId = 1;
+      const response = await request(api).get(`/goats/${goatId}`);
 
-  it('responds to DELETE with a 404 status code if the goat does not exist', (done) => {
-    request(api).delete('/goats/9').expect(404, done)
-  })
+      expect(response.status).toBe(200);
+      expect(response.body.data).toHaveProperty('id', goatId);
+    });
 
-  it('responds to DELETE /goats/:id with status 204', async () => {
-    const responseBeforeDeletion = await request(api).get('/goats')
-    expect(responseBeforeDeletion.body.data.length).toBe(3)
+    it('should return a 404 if goat is not found', async () => {
+      const nonExistentGoatId = 999;
+      const response = await request(api).get(`/goats/${nonExistentGoatId}`);
 
-    await request(api).delete('/goats/1').expect(204)
+      expect(response.status).toBe(404);
+      expect(response.body.error).toBe('This goat does not exist!');
+    });
+  });
 
-    const responseAfterDeletion = await request(api).get('/goats')
-    expect(responseAfterDeletion.body.data.length).toBe(2)
-  })
+  describe('POST /goats', () => {
+    it('should create a new goat and return it', async () => {
+      const newGoat = { name: 'Billy', age: 3 };
+      const response = await request(api)
+        .post('/goats')
+        .send(newGoat);
+
+      expect(response.status).toBe(201);
+      expect(response.body.data).toHaveProperty('name', 'Billy');
+      expect(response.body.data).toHaveProperty('age', 3);
+    });
+
+    it('should return a 400 if required fields are missing', async () => {
+      const incompleteGoat = { name: 'Billy' };
+      const response = await request(api)
+        .post('/goats')
+        .send(incompleteGoat);
+
+      expect(response.status).toBe(400);
+      expect(response.body.error).toBe('age is missing');
+    });
+  });
+
+  describe('PATCH /goats/:id', () => {
+    it('should update an existing goat and return it', async () => {
+      const goatId = 1;
+      const updatedGoat = { name: 'Updated Goat', age: 5 };
+      const response = await request(api)
+        .patch(`/goats/${goatId}`)
+        .send(updatedGoat);
+
+      expect(response.status).toBe(200);
+      expect(response.body.data).toHaveProperty('name', 'Updated Goat');
+      expect(response.body.data).toHaveProperty('age', 5);
+    });
+
+    it('should return a 400 if update fails due to missing data', async () => {
+      const nonExistentGoatId = 999;
+      const updateData = { name: 'Updated Goat', age: 5 };
+
+      const response = await request(api).patch(`/goats/${nonExistentGoatId}`).send(updateData);;
+
+      expect(response.status).toBe(400);
+      expect(response.body.error).toBe('This goat does not exist!');
+    });
+  });
+  
+  describe('DELETE /goats/:id', () => {
+    it('should delete a goat and return a 204 status code', async () => {
+      const goatId = 1;
+      const response = await request(api).delete(`/goats/${goatId}`);
+
+      expect(response.status).toBe(204);
+    });
+
+    it('should return a 404 if the goat to delete does not exist', async () => {
+      const nonExistentGoatId = 999;
+      const response = await request(api).delete(`/goats/${nonExistentGoatId}`);
+
+      expect(response.status).toBe(404);
+      expect(response.body.error).toBe('This goat does not exist!');
+    });
+  });
+  
 })

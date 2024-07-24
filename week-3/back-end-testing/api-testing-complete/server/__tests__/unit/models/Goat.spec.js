@@ -7,130 +7,154 @@ describe('Goat', () => {
   afterAll(() => jest.resetAllMocks())
 
   describe ('getAll', () => {
-    it('resolves with goats on successful', async () => {
-      jest.spyOn(db, 'query')
-        .mockResolvedValueOnce({
-          rows: [{ name: 'g1', age: 1 }, { name: 'g2', age: 2 }, { name: 'g3', age: 3 }]
-        })
+    it('resolves with goats on successful db query', async () => {
+      // Arrange
+      const mockGoats = [
+        { id: 1, name: 'g1', age: 1 },
+        { id: 2, name: 'g2', age: 2 },
+        { id: 3, name: 'g3', age: 3 },
+      ];
+      jest.spyOn(db, 'query').mockResolvedValueOnce({ rows: mockGoats });
 
-      const goats = await Goat.getAll()
-      
-      expect(goats).toHaveLength(3)
-      expect(goats[0]).toHaveProperty('id')
-    })
+      // Act
+      const goats = await Goat.getAll();
 
-    it('should throw an Error on db query error', async () => {
-      jest.spyOn(db, 'query')
-        .mockResolvedValueOnce({ rows: [] })
+      // Assert
+      expect(goats).toHaveLength(3);
+      expect(goats[0]).toHaveProperty('id');
+      expect(goats[0].name).toBe('g1');
+      expect(db.query).toHaveBeenCalledWith("SELECT * FROM goats");
+    });
 
-      try {
-        await Goat.getAll()
-      } catch (err) {
-        expect(err).toBeDefined()
-        expect(err.message).toBe("No goats available.")
-      }
-    })
+    it('should throw an Error when no goats are found', async () => {
+      // Arrange
+      jest.spyOn(db, 'query').mockResolvedValueOnce({ rows: [] });
+
+      // Act & Assert
+      await expect(Goat.getAll()).rejects.toThrow('No goats available.');
+    });
   })
 
   describe ('findById', () => {
     it('resolves with goat on successful db query', async () => {
-      let testGoat = { id: 1, name: 'goat', age: 22 }
-      jest.spyOn(db, 'query')
-        .mockResolvedValueOnce({ rows: [testGoat] })
+      // Arrange
+      const testGoat = { id: 1, name: 'goat', age: 22 };
+      jest.spyOn(db, 'query').mockResolvedValueOnce({ rows: [testGoat] });
 
-      const result = await Goat.findById(1)
-      
-      expect(result).toBeInstanceOf(Goat)
-      expect(result.name).toBe('goat')
-      expect(result.id).toBe(1)
-    })
+      // Act
+      const result = await Goat.findById(1);
 
-    it('should throw an Error on db query error', async () => {
-      jest.spyOn(db, 'query').mockRejectedValue()
+      // Assert
+      expect(result).toBeInstanceOf(Goat);
+      expect(result.name).toBe('goat');
+      expect(result.id).toBe(1);
+      expect(db.query).toHaveBeenCalledWith('SELECT * FROM goats WHERE id = $1', [1]);    
+    });
 
-      try {
-        await Goat.findById('red')
-      } catch (error) {
-        expect(error).toBeTruthy()
-        expect(error.message).toBe('This goat does not exist!')
-      }
-    })
+    it('should throw an Error when goat is not found', async () => {
+      // Arrange
+      jest.spyOn(db, 'query').mockResolvedValueOnce({ rows: [] });
+
+      // Act & Assert
+      await expect(Goat.findById(999)).rejects.toThrow('This goat does not exist!');
+    });
   })
 
   describe('create', () => {
-    it('resolves with goat on successful db query', async () => {
-      let goatData = { name: 'plum', age: 99 }
-      jest.spyOn(db, 'query')
-        .mockResolvedValueOnce({ rows: [{ ...goatData, id: 1 }] });
+    it('resolves with goat on successful creation', async () => {
+      // Arrange
+      const goatData = { name: 'plum', age: 99 };
+      jest.spyOn(db, 'query').mockResolvedValueOnce({ rows: [{ ...goatData, id: 1 }] });
 
+      // Act
       const result = await Goat.create(goatData);
-      
-      expect(result).toBeTruthy()
-      expect(result).toHaveProperty('id')
-      expect(result).toHaveProperty('name')
-      expect(result).toHaveProperty('age')
-    })
 
-    it('should throw an Error on db query error', async () => {
-      try {
-        await Goat.create({ name: "plum" })
-      } catch (error) {
-        expect(error).toBeTruthy()
-        expect(error.message).toBe('age is missing')
-      }
-    })
+      // Assert
+      expect(result).toBeInstanceOf(Goat);
+      expect(result).toHaveProperty('id', 1);
+      expect(result).toHaveProperty('name', 'plum');
+      expect(result).toHaveProperty('age', 99);
+      expect(db.query).toHaveBeenCalledWith(
+        "INSERT INTO goats(name, age) VALUES ($1, $2) RETURNING *",
+        [goatData.name, goatData.age]
+      );
+    });
+
+    it('should throw an Error when age is missing', async () => {
+      // Arrange
+      const incompleteGoatData = { name: 'plum' };
+
+      // Act & Assert
+      await expect(Goat.create(incompleteGoatData)).rejects.toThrow('age is missing');
+    });
   })
 
   
   describe('update', () => {
-    it('should return the updated goat', async () => {
-      const goat = new Goat({ name: 'plum', age: 99 })
-      jest.spyOn(db, 'query')
-        .mockResolvedValueOnce({ rows: [{ id: 72, name: 'pear', age: 100 }] })
+    it('should return the updated goat on successful update', async () => {
+      // Arrange
+      const goat = new Goat({ id: 72, name: 'plum', age: 99 });
+      const updatedData = { name: 'pear', age: 100 };
+      const updatedGoat = { id: 72, ...updatedData };
+      jest.spyOn(db, 'query').mockResolvedValueOnce({ rows: [updatedGoat] });
 
-      const result = await goat.update({ name: 'pear', age: 100 })
+      // Act
+      const result = await goat.update(updatedData);
 
-      expect(result).toBeInstanceOf(Goat)
-      expect(result.id).toBe(72)
-      expect(result.name).toBe('pear')
-      expect(result).not.toEqual(goat)
-    })
+      // Assert
+      expect(result).toBeInstanceOf(Goat);
+      expect(result.id).toBe(72);
+      expect(result.name).toBe('pear');
+      expect(result.age).toBe(100);
+      expect(db.query).toHaveBeenCalledWith(
+        " UPDATE goats SET name = $1, age = $2 WHERE id = $3 RETURNING * ",
+        [updatedData.name, updatedData.age, goat.id]
+      );
+    });
 
-    it('should throw an error if age is missing', async () => {
-      try {
-        const goat = new Goat({ name: 'plum', age: 99 })
-        await goat.update({ name: 'puppet' });
-      } catch (error) {
-        expect(error).toBeTruthy()
-        expect(error.message).toBe('age or name missing')
-      }
-    })
+    it('should throw an Error when age or name is missing', async () => {
+      // Arrange
+      const goat = new Goat({ id: 1, name: 'plum', age: 99 });
+      const incompleteData = { name: 'puppet' };
+
+      // Act & Assert
+      await expect(goat.update(incompleteData)).rejects.toThrow('age or name missing');
+    });
+
+    it('should throw an Error on db query failure', async () => {
+      // Arrange
+      const goat = new Goat({ id: 72, name: 'plum', age: 99 });
+      jest.spyOn(db, 'query').mockRejectedValue(new Error('Database error'));
+
+      // Act & Assert
+      await expect(goat.update({ name: 'pear', age: 100 })).rejects.toThrow('Database error');
+    });
   })
 
   describe ('destroy', () => {
-    it('should return the deleted goat', async () => {
-      const goat = new Goat({})
-      jest.spyOn(db, 'query')
-        .mockResolvedValueOnce({ rows: [{ id: 72, name: 'plum', age: 72 }] })
+    it('should return the deleted goat on successful deletion', async () => {
+      // Arrange
+      const goat = new Goat({ id: 72, name: 'plum', age: 72 });
+      jest.spyOn(db, 'query').mockResolvedValueOnce({ rows: [{ id: 72, name: 'plum', age: 72 }] });
 
-      const result = await goat.destroy()
+      // Act
+      const result = await goat.destroy();
 
-      expect(result).toBeInstanceOf(Goat)
-      expect(result.id).toBe(72)
-      expect(result).not.toEqual(goat)
-    })
+      // Assert
+      expect(result).toBeInstanceOf(Goat);
+      expect(result.id).toBe(72);
+      expect(result.name).toBe('plum');
+      expect(result.age).toBe(72);
+      expect(db.query).toHaveBeenCalledWith("DELETE FROM goats WHERE id = $1 RETURNING *", [goat.id]);
+    });
 
-    it('should throw an error if we cannot locate the goat', async () => {
-      jest.spyOn(db, 'query')
-        .mockRejectedValue()
- 
-      try {
-        const goat = new Goat({name: 'plum', age: 99 })
-        await goat.destroy()
-      } catch (error) {
-        expect(error).toBeTruthy()
-        expect(error.message).toContain('Cannot delete')
-      }
-    })
+    it('should throw an Error on db query failure', async () => {
+      // Arrange
+      const goat = new Goat({ id: 72, name: 'plum', age: 72 });
+      jest.spyOn(db, 'query').mockRejectedValue(new Error('Database error'));
+
+      // Act & Assert
+      await expect(goat.destroy()).rejects.toThrow('Cannot delete.');
+    });
   })
 })
