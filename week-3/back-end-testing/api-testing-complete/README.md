@@ -12,7 +12,7 @@
   
     ```sh
     PORT=<pick a port>
-    ## use elephant SQL for DB_URL
+    ## use Supabase for DB_URL
     DB_URL=<link-db>
     ```
     
