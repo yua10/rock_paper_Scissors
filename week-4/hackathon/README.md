@@ -35,7 +35,7 @@ Your application will need to have a backend, a frontend and a database:
 - For the backend, use **Express** and **JavaScript**
 - For the frontend, use **HTML** and **CSS**
 - You can manage your database with **SQL**
-- You can use **Docker** for your database, or an external host if you would prefer (e.g **ElephantSQL**)
+- You can use **Docker** for your database, or an external host if you would prefer (e.g **Supabase**)
 
 ### User stories
 
