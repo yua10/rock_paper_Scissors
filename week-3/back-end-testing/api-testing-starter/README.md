@@ -8,17 +8,26 @@
 
 ### Setup the database
 
-- Create an `.env` file within `server` & add the following:
+- Create a `.env` file within `server` & add the following:
   
-    ```bash
+    ```sh
     PORT=<pick a port>
-    ## use Supabase for DB_URL
+    ## use Supabase for both DB_URL & DB_TEST_URL
     DB_URL=<link-db>
+    DB_TEST_URL=<link-test-db>
     ```
-- Run `npm run seed-db` to setup the database
-  
-### Run the server 
+    
+- Run `npm run seed-db` to setup the dev database
+
+### Run the server
 
 - Run `npm run dev` to start the API & the app should run on `3000` (if that's the port you've set in the `.env` file)
 
-**Note:** The `docker-compose.yaml` file is needed to setup a test database when implementing tests.
+### Setup testing database
+
+- Run `npm run setup-test-db` within `server` to setup the test database
+
+### Run the tests & display test coverage
+
+- Run `npm run test` to run the tests
+- Run `npm run coverage` to display the test coverage
