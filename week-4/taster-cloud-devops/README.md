@@ -10,3 +10,5 @@ To access a resource, click on its corresponding link.
 
 | Resource | Folder |
 | --- | --- |
+| Intro to DevOps |[Link](./intro-to-devops.md)|
+| Technical Questions |[Link](./technical-questions.md)|
