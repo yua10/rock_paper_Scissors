@@ -23,7 +23,7 @@ The exercise is revolved around 'Dockerising' current and potential MVC / APIs.
 - Create a simple Express API connected to a database and when complete build that service as a Docker Image and publish that image to Docker Hub.
 
 ### Extension
-- Look into how you could create a **PostgreSQL DB** as a microservice
+- Look into how you could create a **PostgreSQL DB** Docker Image and how to access that database using `psql`.
 - Personal Study 
 
 
