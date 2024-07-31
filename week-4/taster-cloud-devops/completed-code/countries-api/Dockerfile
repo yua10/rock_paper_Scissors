@@ -3,6 +3,6 @@ WORKDIR /app
 COPY package*.json /app
 RUN npm install
 COPY . /app
-EXPOSE 3001
+EXPOSE 3000
 RUN npm run setup-db
 CMD ["node", "server/index.js"]
