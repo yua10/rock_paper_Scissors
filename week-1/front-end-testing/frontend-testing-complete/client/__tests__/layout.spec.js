@@ -41,7 +41,7 @@ describe('index.html', () => {
     const h1 = document.querySelector('h1')
   
     const input = document.querySelector('#name')
-    input.value = 'romeo'
+    input.value = 'emile'
     form.dispatchEvent(new dom.window.Event('submit'));
   
     expect(h1.innerHTML).toContain(input.value)
