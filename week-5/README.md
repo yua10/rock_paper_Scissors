@@ -87,7 +87,7 @@ See current guidance [here](https://www.gov.uk/government/publications/national-
 
 ### Presentation Requirements
 
-- Prepare a 10 minute presentation covering the following topics *(this is alphabetical, not an appropriate delivery order!)*:
+- Prepare a 10 minute presentation covering the following topics *(this is the order we'd like you to follow)*:
 
     - Purpose of Solution
     - Planning & Delivery (demonstration of agile principles)
