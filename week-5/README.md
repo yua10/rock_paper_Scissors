@@ -88,9 +88,9 @@ See current guidance [here](https://www.gov.uk/government/publications/national-
 ### Presentation Requirements
 
 - Prepare a 10 minute presentation covering the following topics *(this is the order we'd like you to follow)*:
-
+    - Meet the Team (include photos) 
     - Purpose of Solution
-    - Planning & Delivery (demonstration of agile principles)
+    - Planning & Delivery (trello board, wireframes, ERD, stakeholder analysis..)
     - Live Demonstration: you will need to make a screen recording of your product UI and one person from your team will be talking over the recording during the presentation 
     - Technologies
     - Significant Code / Code you are proud of (include snippets!)
