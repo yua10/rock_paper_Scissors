@@ -22,7 +22,8 @@ Apply the following extensions. The first one is the priority. The rest can be t
 
 ### Extensions
 
-- **Add** additonal routes to the API - the priority should be a `PATCH` route that updates a country's details to have full CRUD functionality
+- **Add** additonal routes to the API - the priority should be a `PATCH` route that updates a country's details to have full CRUD functionality 
+- **Refactor** the `README` to add the additional API endpoint in the notes + add additional API endpoints example requests/ responses
 - **Add** a second table in the database that should be linked to the country table using foreign keys with the associated controllers, models and routes
 - **Implement** testing
 - **Add** client-side functionality linked to the additional API routes
