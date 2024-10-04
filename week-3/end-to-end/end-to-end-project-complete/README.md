@@ -16,51 +16,53 @@ A Country API that allows you to add, remove and view countries.
 
 1. Clone the repository
 
-- Run `git clone https://github.com/yourusername/country-api.git` in the CLI of your choice
+    - Run `git clone https://github.com/yourusername/country-api.git` in the CLI of your choice
 
 2. Navigate to the project directory
 
-- Navigate to the project with `cd country-api`
+    - Navigate to the project with `cd country-api`
 
 3. Install dependencies
 
-- Run `npm install` to install all dependencies for the project
+    - Run `npm install` to install all dependencies for the project
 
 4. Setup your database
 
-- Create a database instance on [Supabase](https://supabase.com/) (or other cloud-based database hosting platforms)
-- Retrieve the database URL & copy it
-- Create a `.env` file in the root directory with the following:
-
-  ```
-  DB_URL=<your_database_url>
-  ```
+    - Create a database instance on [Supabase](https://supabase.com/) (or other cloud-based database hosting platforms)
+    - Retrieve the database URL & copy it
+    - Create a `.env` file in the root directory with the following:
     
-- Replace `<your_database_url>` with the database URL you just copied
-- Run `npm run setup-db` to setup the database
+      ```
+      DB_URL=<your_database_url>
+      ```
+      
+    - Replace `<your_database_url>` with the database URL you just copied
+    - Run `npm run setup-db` to setup the database
 
 5. Setup your port
-
-- Add A `PORT` key assigned to the port of your choice in your `.env` file
-
-    ```
-    PORT=<port-of-your-choice>
-    ```
+  
+    - Add A `PORT` key assigned to the port of your choice in your `.env` file
+    
+        ```
+        PORT=<port-of-your-choice>
+        ```
 
 6. Run the server
 
-- Run `npm run dev` to run the server in development mode
-- Run `npm start` to run the server in production mode
+    - Run `npm run dev` to run the server in development mode
+    - Run `npm start` to run the server in production mode
 
 ### Database Schema
 
 `Country Table`
 
+```
 country_id: Primary Key
 name: String, not null 
 capital: String, not null 
 population: Integer, not null 
 etc..
+```
 
 ## API Endpoints
 
@@ -82,9 +84,7 @@ All available API endpoints with their methods and descriptions.
 
 ### Example Request
 
-To retrieve all countries, you can use the following GET request:
-
-`GET /countries`
+To retrieve all countries, you can use the following GET request - `GET /countries`
 
 `curl -X GET http://localhost:<port>/countries`
 
@@ -93,8 +93,8 @@ To retrieve all countries, you can use the following GET request:
 A successful response will return a JSON array of countries objects, similar to the following:
       
   ```json
-      [
-        {
+  [
+    {
           "id": 1,
           "name": "country1",
           "capital": "capital1",
@@ -102,8 +102,8 @@ A successful response will return a JSON array of countries objects, similar to 
           "languages": "language1",
           "fun_fact": "fact1",
           "map_image_url": "url1"
-        },
-        {
+     },
+     {
           "id": 2,
           "name": "country2",
           "capital": "capital2",
@@ -111,6 +111,6 @@ A successful response will return a JSON array of countries objects, similar to 
           "languages": "language2",
           "fun_fact": "fact2",
           "map_image_url": "url2"
-        },
-      ]
+      },
+  ]
   ```
