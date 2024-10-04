@@ -10,6 +10,7 @@ To access a resource, click on its corresponding link.
 
 | Resource | Folder |
 | --- | --- |
-| Frontend using `await` - complete| [Link](./frontend-complete) |
+| Frontend using `await` - complete | [Link](./frontend-complete) |
 | Connecting frontend to backend - complete | [Link](./connecting-frontend) |
-| Fruit salad app - exercise| [Link](./fruit-salad-exercise) |
+| Fruit salad app - exercise | [Link](./fruit-salad-exercise) |
+| Frontend deployment | [Link](./frontend-deployment) |
