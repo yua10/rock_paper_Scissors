@@ -10,4 +10,4 @@ To access a resource, click on its corresponding link.
 
 | Resource | Folder |
 | --- | --- |
-| Change Mini-Project | [Link](./change-mini-project) |
+| Change Mini-Project | [Link](./change-mini-project/README.md) |
