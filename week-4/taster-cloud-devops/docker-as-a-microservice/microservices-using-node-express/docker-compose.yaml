@@ -1,0 +1,27 @@
+version: '3.7'
+services:
+  currency-exchange:
+    image: emilesherrott/currency-exchange-nodejs:0.0.1.RELEASE
+    ports:
+      - "3000:3000"
+    restart: always
+    environment:
+      PORT: 3000
+    networks:
+      - currency-compose-network
+
+  currency-conversion:
+    image: emilesherrott/currency-conversion-nodejs:0.0.1.RELEASE
+    ports:
+      - "3001:3001"
+    restart: always
+    environment:
+      PORT: 3001
+      CURRENCY_EXCHANGE_SERVICE_HOST: http://currency-exchange:3000
+    depends_on:
+      - currency-exchange
+    networks:
+      - currency-compose-network
+
+networks:
+  currency-compose-network:
