@@ -5,8 +5,8 @@ const app = express()
 app.get('/', function (req, res) {
     res.send('{"message":"Hello World JavaScript v3"}')
 })
-app.listen(5000, () => {
-    console.log('Ready on port 5000!')
+app.listen(process.env.PORT, () => {
+    console.log(`Ready on port ${process.env.PORT}!`)
 })
 
 /* To Handle Ctrl C*/
