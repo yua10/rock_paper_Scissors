@@ -24,6 +24,6 @@ The exercise is revolved around 'Dockerising' pre-existing applications with an 
 
 ### Aid
 
-You'll find a guide on how to do this located [here](../resources/microservice-db-mvc.md).
+You'll find a guide on how to do this located [here](../../resources/microservice-db-mvc.md).
 
 
