@@ -498,17 +498,7 @@ See [Requirements & Guidelines > Presentation Requirements](#requirements--guide
 
 Coming up with an idea is hard! As humans we're pretty good at finding problems though :wink: so let's use that to our advantage!
 
-Luckily, the good folks at UKPN have helped to narrow things a bit:
-
-If you already have a problem you'd like to work on, please do go for it! For those that are less inclined to have problems on the mind (I approve of your outlook!), here are some overall themes (and example problem statements) that might get your brains whirring!
-
-  - "Social justice through technology"
-  - "Creative learning experiences"
-  - "Life on Earth... and beyond!"
-  - "Tech to destress"
-
 If you have secured a placement, you might also want to 'theme' your project around a particular industry so you can start to think about that space.
-
 
 Remember, your Business Case will need to be supported by a range of appendices to back up your problem and solution. You can draw on as many of these as you wish. We would suggest:
 
