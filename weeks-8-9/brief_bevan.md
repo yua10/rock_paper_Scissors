@@ -113,7 +113,7 @@ _See [Requirements & Guidelines > Presentation Requirements](#requirements--guid
 <td><details>
 <summary>Pitch Requirements</summary>
 
-_Pitches take place on the Tuesday of Week 1._
+_Pitches take place on the Monday afternoon of Week 1._
 
 - Put together your own brief as a document of what you are working towards. This should include:
     - Problem Statement & solution
