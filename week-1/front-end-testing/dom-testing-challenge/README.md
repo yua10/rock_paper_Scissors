@@ -29,7 +29,11 @@ Testing is an essential skill in software development, and adopting a proactive 
   - Proactive testing uncovers potential weaknesses or flaws in the code that can be addressed before they become larger issues in production.
 
 - **Collaboration with quality in mind**
-  - Testing encourages a culture of quality, where developers collaborate to ensure the code they contribute is not only functional but also thoroughly tested and error-free. 
+  - Testing encourages a culture of quality, where developers collaborate to ensure the code they contribute is not only functional but also thoroughly tested and error-free.
+ 
+### Interpersonal Skills during Projects
+
+Whilst practicing these skills keep in mind, these are developing the behaviours and techniques we expect you to use whilst in your teams during both projects. 
 
 
 
