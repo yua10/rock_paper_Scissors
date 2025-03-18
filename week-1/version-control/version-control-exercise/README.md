@@ -32,6 +32,10 @@ Teamwork is a crucial skill when working in the tech industry, especially as pro
 - **Integration with different skills**
   - Modular development allows different team members to work on different features which suit their skill set and experience 
 
+### Interpersonal Skills during Projects
+
+Whilst practicing these skills keep in mind, these are developing the behaviours and techniques we expect you to use whilst in your teams during both projects. 
+
 ### Instructions:
 
 **Create GitHub Repository:**
