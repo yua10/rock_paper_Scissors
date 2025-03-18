@@ -10,11 +10,32 @@ You have **2 hours** to make as much progress on this task as possible.
 
 ### Team
 
-Pairs of students
+Pairs of students 
 
 ### Set-up
 
 **Run** `npm install` from this folder to install all necessary libraries.
+
+## Interpersonal Skills
+
+Testing is a crucial aspect of writing quality code and being proactive in delivering robust software. This section explores how testing connects to being proactive and the importance of taking the initiative in ensuring that your code is thoroughly tested before it reaches production.
+
+Testing is an essential skill in software development, and adopting a proactive approach to it ensures that your code is reliable, maintainable, and scalable. Rather than waiting for issues to arise, proactively writing tests for your code can help catch bugs early, improve the quality of your work, and prevent larger problems down the line when refactoring. Here's how testing ties into taking initiative and writing good code:
+
+- **Writing comprehensive test cases by proactively creating tests**
+  - Developers ensure that their code functions as expected and meets the requirements. Unit tests, integration tests, and end-to-end tests help cover various aspects of the codebase to identify potential issues early.
+
+- **Automating the testing process**
+  - Automated testing helps maintain consistency, reduces the risk of human error, and ensures that tests are run frequently throughout development.
+
+- **Debugging and improving code quality**
+  - Testing encourages developers to identify edge cases and potential failures, fostering a mindset of writing more resilient code.
+  - Proactive testing uncovers potential weaknesses or flaws in the code that can be addressed before they become larger issues in production.
+
+- **Collaboration with quality in mind**
+  - Testing encourages a culture of quality, where developers collaborate to ensure the code they contribute is not only functional but also thoroughly tested and error-free. 
+
+
 
 ## Brief
 
