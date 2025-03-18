@@ -18,6 +18,20 @@ Pairs of students
 
 The objective of the exercise is to transfer a basic website project (your end to end project) from local machines to GitHub and collaborate using version control with Git. The [Git flow document](../git-notes/git-flow.md) can be used to help with the exercise. 
 
+## Interpersonal Skills
+
+Team Work is a fundamental skill when working in tech. This exercise is designed to explore some of techniques you'll be using to collaborate whilst in industry. 
+
+Teamwork is a crucial skill when working in the tech industry, especially as projects grow in complexity and scale. In tech, collaboration isn't just about working with others; it’s about using the right tools and strategies to ensure seamless coordination and productivity. One of the most important tools that exemplifies the power of teamwork in tech is Git; used for managing code and collaborating on software projects. Here’s a breakdown of how teamwork and Git go hand-in-hand and why they’re indispensable in the tech industry:
+- **Collaboration through version control**
+  - Multiple developers working simultaneously on the same project
+  - Track changes made by indivudual members of the team
+- **Conflict resolution and communication**
+  - Communications and coordination in conjunction with Git allows you to resolve conflicts
+  - Pull Requests allows review of work before its merged and encourages discussion about changes made
+- **Integration with different skills**
+  - Modular development allows different team members to work on different features which suit their skill set and experience 
+
 ### Instructions:
 
 **Create GitHub Repository:**
