@@ -3,10 +3,15 @@
 ## About the Presentation
 
 This presentation is based on a game that was introduced during the **SE Taster Day** (Rock, Paper, Scissors).
+
 The process of building the game fosters essential skills such as *communication*, *collaboration*, and *teamwork*.
+
 These aspects should be highlighted throughout the presentation.
- 
+
+<br>
+
 The presentation **should** be created using PowerPoint.
+
 This will help you get accustomed to these tools for larger presentations in the future.
  
 ## Prepare a 4-Minute Presentation Covering the Following Topics
