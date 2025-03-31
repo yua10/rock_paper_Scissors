@@ -15,7 +15,14 @@ The presentation **should** be created using PowerPoint.
 This will help you get accustomed to these tools for larger presentations in the future.
  
 ## Prepare a 5min Presentation Covering the Following Topics
- 
+
+#### Slides Requirements
+  - Project name
+  - Team names
+  - Live Demo
+  - Significant code
+  - What we've learned
+
 ### 1. Live Demonstration
 
 - Showcase the key features of your project
