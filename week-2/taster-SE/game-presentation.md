@@ -14,7 +14,7 @@ The presentation **should** be created using PowerPoint.
 
 This will help you get accustomed to these tools for larger presentations in the future.
  
-## Prepare a 4-Minute Presentation Covering the Following Topics
+## Prepare a 5min Presentation Covering the Following Topics
  
 ### 1. Live Demonstration
 
