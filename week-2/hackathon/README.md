@@ -57,6 +57,6 @@ You will find below a **list of popular games** to choose from, which are catego
 
 ### Deliverables
 
-- A  **GitHub** link to your code **by 3pm** on your cohort group
+- A  **GitHub** link to your code **by 4pm** on your cohort group
 
 **HAVE SOME FUN!** 🕺 💃
