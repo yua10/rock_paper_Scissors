@@ -41,7 +41,7 @@ You will find below a **list of popular games** to choose from, which are catego
 ### How?
 
 - Google is your friend! If you get stuck on anything, your first resort should be google, then you can ask your peers, and finally come to us if none of the previous solutions helped you
-- Make sure to host your project on **GitHub** and send your repository link to your cohort group **by 3pm**
+- Make sure to host your project on **GitHub** and send your repository link to your cohort group **by 4pm**
 - Your repo should have an informative and structured **README** stating how to run your app and play the game. See our [Writing READMEs guide](https://github.com/getfutureproof/fp_guides_wiki/wiki/Writing-READMEs) for details.
 - In pairs, make sure to practice **pair programming**. Alternate between being a driver and navigator
     - *Driver -* writes code
