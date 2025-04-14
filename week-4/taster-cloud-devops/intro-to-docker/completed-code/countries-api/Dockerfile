@@ -3,6 +3,7 @@ WORKDIR /app
 COPY package*.json /app
 RUN npm install
 COPY . /app
-EXPOSE 3000
+ENV PORT=3000
+ENV DB_URL=
 RUN npm run setup-db
 CMD ["node", "server/index.js"]
