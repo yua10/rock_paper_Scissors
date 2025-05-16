@@ -151,11 +151,14 @@ _Each team will have:_
 <tr>
 
 <td><details>
-<summary><i>Soundchecks</i></summary>
+<summary><i>Retro</i></summary>
 
-- Times will be assigned by trainers.
-- At least one _(where possible both)_ of your trainers will attend to facilitate.
-- The project manager will be in charge of updating the trainers during soundchecks
+- Times will be assigned by trainers but will take place on the Friday morning.
+- At least one of your trainers will attend to facilitate.
+- One member of the team (if there's a project mananger, then the project manager) will need to download and create a copy of this [file](https://lafosseassociatesltd-my.sharepoint.com/:p:/r/personal/emile_sherrott_lafosse_com/_layouts/15/doc2.aspx?sourcedoc=%7B0251DD7E-6465-4E5C-903A-F4EFBCDC2A78%7D&file=Sailboat%20Retrospective.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1&wdOrigin=SEARCHENGINE.GOOGLE%2CAPPHOME-WEB.FILEBROWSER.RECENT&wdPreviousSession=79713d72-e9f0-450b-a3c9-2fbdcf8f203e&wdPreviousSessionSrc=AppHomeWeb&ct=1747396157831) on the Friday morning.
+- Then edit to add the teams feedback into the four quadrants. 
+- The project manager will need to show this to the trainer for a reflection on the notes.
+- **Note: This feedback needs to collected about the dynamic of the team. Individual feedback is mostly discussed in a Sprint Review**
 
 </details></td>
 </tr>
