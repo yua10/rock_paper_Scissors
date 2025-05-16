@@ -363,7 +363,7 @@ _On Friday each team will have:_
 <tr>
 
 <td><details>
-<summary><i>A retro</i></summary>
+<summary><i>Retro</i></summary>
 
 - Times selected from trainer.
 - At least one of your trainers will attend to facilitate.
