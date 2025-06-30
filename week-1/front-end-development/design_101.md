@@ -28,6 +28,7 @@
 ## UI
 ### Concerned with the look and feel of an app
 
+
 - UX stands for user experience and is concerned with creating a simple, useful and delightful experience for the app user whereas UI stands for user interface and is concerned with the look and feel of an app
 - if the website were a body, HTML would be the skeleton, CSS would be the skin and JS would be the blood and muscles and organs - all of these are moving parts that allow the body to function
 - UX is concerned with the body's behavior, with what it can do whereas UI is concerned with the body's appearance, its flesh, makeup and clothes
@@ -36,50 +37,24 @@
 
 <img class="r-stretch" src="https://user-images.githubusercontent.com/25111733/192475332-9bb30d9d-a80b-4a7a-a3c2-6dc64009b7fa.png"/>
 
-### Notes:
-
-#### Point
-- **Understand** the difference between UX and UI using a real world example
-
-#### Narrative
-- **Provide** students with the example of Google as a real world example
-- **Show** students this image of the Google search engine
-- **Ask** students what they think is the UX element of that page
-- **Tell** students the UX element would be the text field taking some user input, which in turn instantly returns a list of links to relevant websites as well as a brief summary of each site
-- **Tell** students the UI element is the fact that the text field is centered on a white page, placed under a colorful logo of Google. Feel free to go more into the specifics of the hight of the text field, the shadow, the border-radius and all other CSS elements of the page
-
-#### Transition
-- **Inform** students that in the field, UI is considered a subset of UX, which focuses on making apps visually appealing
-- **Clarify** that UI is still important and go hand in hand with UX. But, you can't have UI without first having UX
-- **Signpost** it is now time to focus on UX in the digital space
+- the UX element would be the text field taking some user input, which in turn instantly returns a list of links to relevant websites as well as a brief summary of each site
+- the UI element is the fact that the text field is centered on a white page, placed under a colorful logo of Google. Feel free to go more into the specifics of the hight of the text field, the shadow, the border-radius and all other CSS elements of the page
 
 ---
 
 ## UX Design in the digital space
 
-### Notes:
-
-#### Point
-
-- **Recognise** when a UX design feature has been executed poorly
-
-#### Narrative
-
 #### UX Design in the digital space - what not to do in UX?
 
-- **Explain** that being able to recognize bad UX is an important skill to have that will help them develop good UX interfaces in the future
-- **Introduce** students to the game of "What is bad UX about this feature?"
-- **Ask** students what's the bad UX of the features on the following slides
-
-Use this following article as a guide: https://careerfoundry.com/en/blog/ux-design/10-classic-ux-design-fails/
+- being able to recognize bad UX is an important skill to have that will help them develop good UX interfaces in the future
+- "What is bad UX about this feature?"
+- Use this following article as a guide: https://careerfoundry.com/en/blog/ux-design/10-classic-ux-design-fails/
 
 ---
 
 ### Whatsapp delete message feature
 
 <img class="r-stretch" src="https://user-images.githubusercontent.com/25111733/192473835-673c7f77-e2a1-4b2e-af1b-f2e0ae0c3ce5.png">
-
-### Notes:
 
 **Why it’s bad UX:** Informing the recipient that the sender has deleted a message somewhat defeats the purpose of deleting it in the first place. In fact, this looks way more suspicious and is likely to prompt an awkward “why did you delete the message?” type of response
 
@@ -91,8 +66,6 @@ Use this following article as a guide: https://careerfoundry.com/en/blog/ux-desi
 
 <img class="r-stretch" src="https://user-images.githubusercontent.com/25111733/192474218-f351d7aa-8502-4e4a-a243-fe09ab341006.png">
 
-### Notes:
-
 **Why it’s bad UX:** Auto-anything means the designers have made huge assumptions about the users’ desires
 
 **The key takeaway:** If a feature gets in the way of a site’s usability or hinders users from seeing key information, it simply shouldn’t be there
@@ -103,16 +76,12 @@ Use this following article as a guide: https://careerfoundry.com/en/blog/ux-desi
 
 <img class="r-stretch" src="https://user-images.githubusercontent.com/25111733/192474210-e9cb394f-6d79-4f7c-a85f-9e475386f46c.png">
 
-### Notes:
-
 **Why it’s bad UX:** Dark UX is the opposite of user-first design. Rather than considering the functionality and usability of a platform, dark UX deliberately confuses and misleads users into choosing certain options over others, normally in the interest of generating more revenue for the company
 
 **The key takeaway:** Transparency is key to building a good relationship with your users, and infinitely more valuable than the short-term gratification of your users spending a little more money than they meant to
 
-#### Transition
-- **Tell** students that these three examples don't follow the usability principles used to create well-designed user interfaces 
-- **Explain** to students that whether they're designing a login screen, a search experience or anything else, usability is essential
-- **Reveal** to students there are usability measures that exist to help us understand how usable our products really are - they are called 'heuristics'
+- whether you're designing a login screen, a search experience or anything else, usability is essential
+- there are usability measures that exist to help us understand how usable our products really are - they are called 'heuristics'
 
 ---
 
@@ -120,33 +89,17 @@ Use this following article as a guide: https://careerfoundry.com/en/blog/ux-desi
 
 ### Usability principles for user interface design
 
-### Notes:
-
-#### Point
-- **Understand** what heuristics are and how to use them in UX design
-
 #### Narrative
-- **Reveal** that it was Design Consultant Don Norman who came up with the word 'heuristics' to refer to these usability measures 
-- **Tell** students heuristics are important principles to follow when shaping their designs to make sure their products are more usable to more people and more likely to succeed
-
-#### Transition
-- **Introduce** students to the following heuristics
-
+- Don Norman, a design consultant - came up with the word 'heuristics' to refer to these usability measures 
+- heuristics are important principles to follow when shaping their designs to make sure their products are more usable to more people and more likely to succeed
+  
 ---
 
 ### Visibility of System Status
 
 <img class="r-stretch" src="https://user-images.githubusercontent.com/25111733/192462363-1e463a26-e333-49c4-b89c-2687ed75f6d8.png">
 
-### Notes:
-
-#### Definition
-- **Tell** students the app should always show the status of an on-going operation to the users until is is fully done/processed. This way, users get a clear understanding of the progress of that particular process and activity and are not left confused
-
-#### Demonstration
-- **Demonstrate** how the heuristic is shown on the example on the slide but first ask students:
-  - Progress bar showing the upload of 3 out of 5 images
-  - User is well aware of progress and can wait without confusion until the processing has completed
+- An app should always show the status of an on-going operation to the users until is is fully done/processed. This way, users get a clear understanding of the progress of that particular process and activity and are not left confused
 
 ---
 
@@ -154,17 +107,7 @@ Use this following article as a guide: https://careerfoundry.com/en/blog/ux-desi
 
 <img class="r-stretch" src="https://user-images.githubusercontent.com/25111733/192462356-fca830de-c387-48df-8ebb-d771d60966e9.png">
 
-### Notes:
-
-
-#### Definition
-- **Tell** students that user interaction is key is building a successful product. To make that interaction easier between users and product, it's important to use components that are familiar to the end users so that they can relate them with everyday things and understand the purpose of each element
-
-#### Demonstration
-- **Demonstrate** how the heuristic is shown on the example on the slide but first ask students:
-  - Graphic of a payment card at top of the screen
-  - Users can relate these graphics with a real payment card and be able to fill up the details without any confusion
-  - Straightforward and easier 
+- user interaction is key is building a successful product. To make that interaction easier between users and product, it's important to use components that are familiar to the end users so that they can relate them with everyday things and understand the purpose of each element
 
 ---
 
@@ -175,13 +118,8 @@ Use this following article as a guide: https://careerfoundry.com/en/blog/ux-desi
 ### Notes:
 
 #### Definition
-- **Tell** students that a user needs complete control and freedom over the entire system - meaning the system should enable users to undo an action that happened by mistake
-- **Explain** that without user control and freedom, frustrating usability issues can occur leaving users disatisfied
-
-#### Demonstration
-- **Demonstrate** how the heuristic is shown on the example on the slide but first ask students:
-  - Success message popup for publishing a profile
-  - Undo button on that popip allows user to go back and set up their profile again  
+- a user needs complete control and freedom over the entire system - meaning the system should enable users to undo an action that happened by mistake
+- without user control and freedom, frustrating usability issues can occur leaving users disatisfied
 
 ---
 
@@ -189,17 +127,9 @@ Use this following article as a guide: https://careerfoundry.com/en/blog/ux-desi
 
 <img class="r-stretch" src="https://user-images.githubusercontent.com/25111733/192462347-f90a7227-5840-405a-8c62-6ce8a94afe04.png">
 
-### Notes:
-
 #### Definition
-- **Tell** students that a rule of thumb is to follow the consistency and standard throughout product design - meaning that all components need to follow a similar branding
-- **Explain** that without consistency and standard, users might be left confused if they see different kind of experiences on different task flows
-
-#### Demonstration
-- **Demonstrate** how the heuristic is shown on the example on the slide but first ask students:
-  - Portion of UI guideline of a product 
-  - Consistency across all UI elements
-  - By using brand guidelines, we can keep consistency and standard easily
+- a rule of thumb is to follow the consistency and standard throughout product design - meaning that all components need to follow a similar branding
+- without consistency and standard, users might be left confused if they see different kind of experiences on different task flows
 
 ---
 
