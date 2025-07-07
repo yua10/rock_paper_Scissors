@@ -64,5 +64,5 @@ Document your mini-project using Markdown formatting. Include:
 
 ---
 
-#### Completed `md` documentation should be posted on the `Bevan Students` channel by 1pm - Good luck!
+#### Completed `md` documentation should be posted on the `Bevan Students` channel by 12.30pm - Good luck!
 
