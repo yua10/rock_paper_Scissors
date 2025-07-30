@@ -92,6 +92,8 @@ These instructions are taken from the following [Github docs](https://docs.githu
 
 - Copy the public key, using the following command:
 
+- NOTE: If you created a SSH Key with the algorithm, **ed25519**, you'll need to run: `cat ~/.ssh/id_ed25529.pub`
+
   ```sh
   cat ~/.ssh/id_rsa.pub
   ```
