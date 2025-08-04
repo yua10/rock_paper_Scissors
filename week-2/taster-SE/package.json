@@ -1,0 +1,15 @@
+{
+  "name": "taster-se",
+  "version": "1.0.0",
+  "description": "This folder contains resources (including exemplars, instructions, and starter code) for the **Software Engineering** Taster Day.",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "play": "node game.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
